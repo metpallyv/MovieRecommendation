@@ -22,6 +22,7 @@ def build_movies_dict(movies_file):
 #Each line of i/p file represents one tag applied to one movie by one user,
 #and has the following format: userId,movieId,tag,timestamp
 #make sure you know the number of users and items for your dataset
+#return the sparse matrix as a numpy array
 def read_data(input_file,movies_dict):
     #no of users
     users = 718
