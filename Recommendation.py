@@ -94,7 +94,10 @@ def top_25_recommended_movies(pred_rating_file,users,unrated_movies_per_user,mov
         for i in range(25):
             movie_id, rating = SortedMovies[i]
             actual_movie_id = reverse_movie_id_mapping[movie_id]
-            print ("{} with Movie rating value {}".format(movies_mapping_names[actual_movie_id],rating))
+            #recommend movies only if the predicted rating is greater than 3.5
+            if rating >= 3.5 :
+                print ("{} ".format(movie))
+            #print ("{} with Movie rating value {}".format(movies_mapping_names[actual_movie_id],rating))
         print "\n"
 
 #main method
