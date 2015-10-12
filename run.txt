@@ -1,0 +1,7 @@
+Steps to run the project:
+
+1. Steps to run the code to build matrix factorization model:
+  MatrixFactorization.py ratings.csv  8 movies.csv
+  
+2. Steps to run the code to reccomend top 25 movies to users:
+  Recommendation.py ratings.csv mf_result.txt movies.csv users.txt
