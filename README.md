@@ -19,7 +19,7 @@ Refer these slides to understand better : http://www.slideshare.net/BenjaminBeng
       3.  beta  : the regularization parameter was set to 0.02
       4.  k     : hidden latent features was set to 8
 
-5. Recommend.py takes in users as a input and recommends top 25 movies out of his/her unrated movies
+5. Recommend.py takes in users as a input and recommends top 25 movies out of his/her unrated movies if the predicted rating for these movies is greater than 3.5 as ideally we want to recommend only good movies
 
 6. Results for users 1 to 5 as follows:
 
