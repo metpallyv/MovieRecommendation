@@ -12,7 +12,7 @@ Refer these slides to understand better : http://www.slideshare.net/BenjaminBeng
       2. Ratings.csv file is the rating file. Each line of this file after the header row represents one rating of one movie by          one user, and has the following format:  userId,movieId,rating,timestamp
       3. Movie information is contained in the file movies.csv. Each line of this file after the header row represents one               movie, and has the following format:     movieId,title,genres
 
-4. MatrixFactorization.py codes implementes the regularized matrix factorization model without using any Machine Learning libraries and saves it as a file, which can then used to perform recommendation. I used the below parameter values:
+4. MatrixFactorization.py codes implementes the regularized matrix factorization model(Gradient Descent) without using any Machine Learning libraries and saves it as a file, which can then used to perform recommendation. I used the below parameter values:
 
       1.  steps : the maximum number of steps to perform the optimisation was set to 5000
       2.  alpha : the learning rate was set to 0.0002
