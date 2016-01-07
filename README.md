@@ -8,7 +8,7 @@ Refer these slides to understand better : http://www.slideshare.net/BenjaminBeng
 
 3. I implmented Regularized Matrix factorization based on the following :
       
-      1. Movie Lens dataset, describes 5-star rating. It contains 100234 ratings and 2213 tag applications across 8927 movies.           These data were created by 718 users between March 26, 1996 and August 05, 2015. I used the smaller dataset as I was            running it on my PC. 
+      1. Movie Lens dataset, describes 5-star rating. It contains 21,000,000 ratings and 510,000 tag applications applied to 30,000 movies by 230,000 users.
       2. Ratings.csv file is the rating file. Each line of this file after the header row represents one rating of one movie by          one user, and has the following format:  userId,movieId,rating,timestamp
       3. Movie information is contained in the file movies.csv. Each line of this file after the header row represents one               movie, and has the following format:     movieId,title,genres
 
@@ -162,7 +162,7 @@ Refer these slides to understand better : http://www.slideshare.net/BenjaminBeng
                 Doc Hollywood (1991) 
                 Killer's Kiss (1955)
                 
-7. Results seem to be good but the model takes 3 hours to run on full movielens data set of 21,000,000 ratings and 510,000 tag applications applied to 30,000 movies by 230,000 users. Hence, I will implement a ApacheSpark version and run it on hdfs to optimize the performance
+7. Results seem to be good but the model takes ~7 hours to run on full movielens data set of 21,000,000 ratings and 510,000 tag applications applied to 30,000 movies by 230,000 users. Hence, I will implement a ApacheSpark version and run it on hdfs to optimize the performance
 
-8. Boom! I implemented Apache Spark version of this project using Spark ALS MLlib library. I took like 15 minutes to run the entire recommendation on HDFS. Wow! what a performance improvement. Refer this project for Apache Spark implementation:
+8. Boom! I implemented Apache Spark version of this project using Spark ALS MLlib library. I took like ~30 minutes to run the entire recommendation on HDFS. Wow! what a performance improvement. Refer this project for Apache Spark implementation:
 https://github.com/metpallyv/ApacheSpark_Scala
